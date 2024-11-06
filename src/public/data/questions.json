@@ -1,0 +1,102 @@
+{
+    "questions": [
+    {
+    "id": 1,
+    "article": "ARTIGO 1º",
+    "question": "Sobre o conceito de trânsito, qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Inclui circulação de pessoas",
+    "Abrange operações de carga/descarga",
+    "Contempla parada de veículos",
+    "É responsabilidade exclusiva dos condutores",
+    "Inclui estacionamento de veículos"
+    ],
+    "correct": 3,
+    "explanation": "O trânsito seguro é DIREITO de todos e DEVER dos órgãos de trânsito, não exclusivo dos condutores. Dica: memorize 'TODOS têm DIREITO, ÓRGÃOS têm DEVER'"
+    },
+    {
+    "id": 2,
+    "article": "ARTIGO 2º",
+    "question": "Sobre as vias terrestres, qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Praias abertas à circulação são vias terrestres",
+    "Áreas privadas de estacionamento coletivo são vias terrestres",
+    "Vias internas de condomínios são vias terrestres",
+    "Rodovias e estradas são vias terrestres",
+    "Quintais residenciais são vias terrestres"
+    ],
+    "correct": 4,
+    "explanation": "Quintais residenciais não são vias terrestres. Dica: memorize 'PIPE' (Praias, Internas-condomínios, Privadas-estacionamento, Estradas)"
+    },
+    {
+    "id": 3,
+    "article": "ARTIGO 3º",
+    "question": "Sobre a abrangência do CTB (Código de Trânsito Brasileiro), qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Aplica-se a veículos nacionais",
+    "Aplica-se a condutores nacionais",
+    "Aplica-se apenas em território nacional",
+    "Aplica-se a veículos estrangeiros",
+    "Aplica-se a condutores estrangeiros"
+    ],
+    "correct": 2,
+    "explanation": "O CTB (Código de Trânsito Brasileiro) se aplica a TODOS, sem exceção. Dica: memorize 'NEVE' (Nacionais e Estrangeiros, Veículos e Estrangeiros)"
+    },
+    {
+    "id": 4,
+    "article": "ARTIGO 5º",
+    "question": "Sobre as atividades do SNT (Sistema Nacional de Trânsito), qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Inclui planejamento e administração",
+    "Abrange educação e engenharia",
+    "Contempla apenas atividades preventivas",
+    "Inclui fiscalização e julgamento",
+    "Abrange operação viária"
+    ],
+    "correct": 2,
+    "explanation": "O SNT (Sistema Nacional de Trânsito) inclui atividades preventivas E punitivas. Dica: use o mnemônico 'PAN PRH EEO PFJ A'"
+    },
+    {
+    "id": 5,
+    "article": "ARTIGO 7º",
+    "question": "Sobre os órgãos do SNT (Sistema Nacional de Trânsito), qual alternativa está INCORRETA?",
+    "alternatives": [
+    "CONTRAN (Conselho Nacional de Trânsito) é o órgão máximo",
+    "CETRAN (Conselho Estadual de Trânsito) atua nos estados",
+    "PRF (Polícia Rodoviária Federal) é um dos órgãos",
+    "Prefeituras são órgãos máximos municipais",
+    "JARI (Junta Administrativa de Recursos de Infrações) integra o sistema"
+    ],
+    "correct": 3,
+    "explanation": "CONTRAN (Conselho Nacional de Trânsito) é o órgão máximo normativo, não as prefeituras. Dica: 'CONTRAN no topo, resto embaixo'"
+    },
+    {
+    "id": 6,
+    "article": "ARTIGO 10",
+    "question": "Sobre a composição do CONTRAN (Conselho Nacional de Trânsito), qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Inclui Ministro da Saúde",
+    "Inclui Ministro da Educação",
+    "Inclui representantes estaduais",
+    "Inclui Ministro da Defesa",
+    "Inclui Ministro do Meio Ambiente"
+    ],
+    "correct": 2,
+    "explanation": "O CONTRAN (Conselho Nacional de Trânsito) não inclui representantes estaduais, apenas ministros. Dica: 'Só MINISTROS tem cadeira'"
+    },
+    {
+    "id": 7,
+    "article": "ARTIGO 12",
+    "question": "Sobre as competências do CONTRAN (Conselho Nacional de Trânsito), qual alternativa está INCORRETA?",
+    "alternatives": [
+    "Consulta pública mínima de 30 dias",
+    "Contribuições disponíveis por 2 anos",
+    "Deliberações urgentes valem 120 dias",
+    "Deliberações podem ser reeditadas sempre",
+    "Perdem eficácia se não aprovadas"
+    ],
+    "correct": 3,
+    "explanation": "Deliberações urgentes NÃO podem ser reeditadas. Dica: '30-2-120: 30 dias consulta, 2 anos guarda, 120 dias urgência'"
+    }
+    ]
+    }
