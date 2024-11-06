@@ -97,6 +97,202 @@
     ],
     "correct": 3,
     "explanation": "Deliberações urgentes NÃO podem ser reeditadas. Dica: '30-2-120: 30 dias consulta, 2 anos guarda, 120 dias urgência'"
-    }
+    },
+    {
+        "id": 8,
+        "article": "ARTIGO 13",
+        "question": "Sobre as Câmaras Temáticas vinculadas ao CONTRAN, qual alternativa está INCORRETA?",
+        "alternatives": [
+        "São integradas por especialistas para oferecer sugestões técnicas",
+        "Os representantes dos segmentos da sociedade devem ser pessoas jurídicas",
+        "A coordenação é exercida por representantes do órgão máximo executivo de trânsito da União ou Ministérios do CONTRAN",
+        "O CONTRAN define o regimento específico para indicação dos especialistas",
+        "As câmaras são compostas exclusivamente por representantes do poder público"
+        ],
+        "correct": 4,
+        "explanation": "As Câmaras são constituídas por igual número de especialistas da União, Estados/DF e Municípios, além de representantes da sociedade. Memorize: 'Composição IGUALITÁRIA entre poder público e sociedade'"
+        },
+        {
+        "id": 9,
+        "article": "ARTIGO 14",
+        "question": "Sobre as competências dos CETRAN e CONTRANDIFE, qual alternativa está INCORRETA?",
+        "alternatives": [
+        "Devem julgar recursos das JARI e dos casos de inaptidão permanente",
+        "São responsáveis por estimular campanhas educativas de trânsito",
+        "Podem elaborar normas no âmbito de suas competências",
+        "Têm poder para revogar decisões do CONTRAN em seu território",
+        "Devem acompanhar atividades de administração, educação e fiscalização do trânsito"
+        ],
+        "correct": 3,
+        "explanation": "Os CETRAN e CONTRANDIFE não podem revogar decisões do CONTRAN, devendo cumprir a legislação. Memorize: 'Hierarquia CONTRAN > CETRAN'"
+        },
+        {
+            "id": 10,
+            "article": "ARTIGO 15",
+            "question": "Sobre a composição e nomeação dos CETRAN e CONTRANDIFE, qual alternativa está INCORRETA?",
+            "alternatives": [
+            "Os presidentes são nomeados pelos Governadores dos Estados e do Distrito Federal",
+            "Os membros devem ter reconhecida experiência em trânsito",
+            "O mandato dos membros é de dois anos, com possibilidade de recondução",
+            "Os presidentes podem ser escolhidos independentemente de experiência em trânsito",
+            "Os membros são nomeados pelos respectivos Governadores"
+            ],
+            "correct": 3,
+            "explanation": "Os presidentes DEVEM ter reconhecida experiência em trânsito. Memorize: 'Presidente = Experiência OBRIGATÓRIA em trânsito'"
+            },
+            {
+            "id": 11,
+            "article": "ARTIGO 16",
+            "question": "Sobre as Juntas Administrativas de Recursos de Infrações (JARI), qual alternativa está INCORRETA?",
+            "alternatives": [
+            "Funcionam junto a cada órgão ou entidade executivos de trânsito ou rodoviário",
+            "São órgãos colegiados responsáveis por julgar recursos contra penalidades",
+            "Possuem regimento próprio observando disposições do CONTRAN",
+            "São financeiramente independentes dos órgãos de trânsito",
+            "Recebem apoio administrativo e financeiro do órgão junto ao qual funcionam"
+            ],
+            "correct": 3,
+            "explanation": "As JARI recebem apoio administrativo e financeiro do órgão junto ao qual funcionam, não sendo independentes. Memorize: 'JARI = Dependência administrativa e financeira do órgão'"
+            },
+            {
+            "id": 12,
+            "article": "ARTIGO 17",
+            "question": "Sobre as competências das JARI, qual alternativa está INCORRETA?",
+            "alternatives": [
+            "Julgam os recursos interpostos pelos infratores",
+            "Podem solicitar informações complementares aos órgãos de trânsito",
+            "Encaminham informações sobre problemas observados nas autuações",
+            "Têm poder para criar novas regras de trânsito",
+            "Analisam recursos referentes às penalidades aplicadas"
+            ],
+            "correct": 3,
+            "explanation": "As JARI não têm poder para criar regras de trânsito, apenas julgam recursos. Memorize: 'JARI = Julgar recursos SIM, criar regras NÃO'"
+            },
+            {
+                "id": 13,
+                "article": "ARTIGO 19",
+                "question": "Sobre as competências do órgão máximo executivo de trânsito da União, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Expede a CNH (Carteira Nacional de Habilitação) e administra o RENACH (Registro Nacional de Carteiras de Habilitação)",
+                "Organiza e mantém o RENAVAM (Registro Nacional de Veículos Automotores)",
+                "Pode substituir decisões dos CETRAN (Conselhos Estaduais de Trânsito) quando julgar necessário",
+                "Estabelece procedimentos sobre habilitação e registro junto ao CONTRAN (Conselho Nacional de Trânsito)",
+                "Coordena a administração de pontuação no SNT (Sistema Nacional de Trânsito)"
+                ],
+                "correct": 2,
+                "explanation": "O órgão não pode substituir decisões dos CETRAN, apenas supervisiona e coordena. Memorize: 'Coordena SIM, substitui NÃO'"
+                },
+                {
+                "id": 14,
+                "article": "ARTIGO 20",
+                "question": "Sobre as competências da PRF (Polícia Rodoviária Federal), qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Executa fiscalização de trânsito nas rodovias federais",
+                "Realiza levantamento de sinistros e socorro de vítimas",
+                "Pode modificar a sinalização das rodovias sem consultar o DNIT (Departamento Nacional de Infraestrutura de Transportes)",
+                "Implementa medidas da PNST (Política Nacional de Segurança no Trânsito)",
+                "Aplica penalidades e medidas administrativas em sua jurisdição"
+                ],
+                "correct": 2,
+                "explanation": "A PRF não pode modificar sinalização sem autorização do órgão competente. Memorize: 'PRF fiscaliza SIM, muda sinalização NÃO'"
+                },
+                {
+                "id": 15,
+                "article": "ARTIGO 21",
+                "question": "Sobre as competências dos órgãos executivos rodoviários, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Fiscalizam conforme o CTB (Código de Trânsito Brasileiro)",
+                "Coletam dados sobre sinistros nas vias sob sua jurisdição",
+                "Podem alterar limites de velocidade sem aprovação do CONTRAN",
+                "Implementam diretrizes do SNT em sua circunscrição",
+                "Executam a PNST em sua área de atuação"
+                ],
+                "correct": 2,
+                "explanation": "Não podem alterar limites de velocidade sem aprovação do CONTRAN. Memorize: 'Velocidade = CONTRAN define'"
+                },
+                {
+                "id": 16,
+                "article": "ARTIGO 22",
+                "question": "Sobre as competências dos órgãos executivos de trânsito dos Estados e do DF (Distrito Federal), qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Realizam processos de CNH junto ao RENACH",
+                "Vistoriam e registram veículos no RENAVAM",
+                "Podem anular multas aplicadas por outros estados no RENAINF (Registro Nacional de Infrações de Trânsito)",
+                "Fiscalizam conforme determinações do CONAMA (Conselho Nacional do Meio Ambiente)",
+                "Comunicam cassações ao CONTRAN"
+                ],
+                "correct": 2,
+                "explanation": "Não podem anular multas de outros estados, cada órgão tem sua competência territorial. Memorize: 'Estado = Poder local'"
+                },
+                {
+                "id": 17,
+                "article": "ARTIGO 23",
+                "question": "Sobre as competências das PM (Polícias Militares), qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Executam fiscalização quando conveniadas ao SNT",
+                "Atuam como agentes da autoridade de trânsito",
+                "Podem criar suas próprias normas independentes do CTB",
+                "Exercem policiamento ostensivo de trânsito",
+                "Operam junto a outros agentes do SNT"
+                ],
+                "correct": 2,
+                "explanation": "PM não pode criar normas, apenas executa a fiscalização. Memorize: 'PM fiscaliza SIM, legisla NÃO'"
+                },
+                {
+                "id": 18,
+                "article": "ARTIGO 24",
+                "question": "Sobre as competências dos órgãos municipais de trânsito, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Planejam conforme diretrizes do SNT",
+                "Implantam sinalização conforme DENATRAN (Departamento Nacional de Trânsito)",
+                "Podem modificar normas do CONTRAN em seu município",
+                "Fiscalizam conforme PRONAR (Programa Nacional de Controle da Poluição do Ar)",
+                "Aplicam penalidades previstas no CTB"
+                ],
+                "correct": 2,
+                "explanation": "Municípios não podem modificar normas do CONTRAN. Memorize: 'Município executa, CONTRAN normatiza'"
+                },
+                {
+                "id": 19,
+                "article": "ARTIGO 25",
+                "question": "Sobre os convênios de delegação no SNT, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Podem ser celebrados entre órgãos do SNT",
+                "Visam eficiência conforme CTB",
+                "Permitem capacitação técnica entre DETRAN (Departamento Estadual de Trânsito)",
+                "Dispensam ressarcimento entre órgãos do SNT",
+                "Podem incluir municípios sem órgão executivo"
+                ],
+                "correct": 3,
+                "explanation": "Os custos devem ser ressarcidos conforme CTB. Memorize: 'Convênio = Ressarcimento obrigatório'"
+                },
+                {
+                "id": 20,
+                "article": "ARTIGO 26",
+                "question": "Sobre deveres dos usuários das vias do SNT, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Devem seguir normas do CTB",
+                "Não podem danificar patrimônio do SNT",
+                "Podem obstruir vias se sinalizarem conforme CONTRAN",
+                "Devem preservar a segurança viária",
+                "Não podem criar obstáculos à circulação"
+                ],
+                "correct": 2,
+                "explanation": "É proibido obstruir vias mesmo com sinalização. Memorize: 'Via livre = Nada pode obstruir'"
+                },
+                {
+                "id": 21,
+                "article": "ARTIGO 27",
+                "question": "Sobre verificações do condutor conforme CTB, qual alternativa está INCORRETA?",
+                "alternatives": [
+                "Deve verificar itens exigidos pelo CONTRAN",
+                "Precisa seguir normas do DENATRAN",
+                "Pode circular com defeitos se for trajeto próximo ao DETRAN",
+                "Deve verificar combustível conforme CTB",
+                "Precisa atender requisitos do SNT"
+                ],
+                "correct": 2,
+                "explanation": "Não pode circular com defeitos, independente da distância até o DETRAN. Memorize: 'Verificação total ANTES de circular'"
+                }
     ]
     }
