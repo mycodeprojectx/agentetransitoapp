@@ -549,13 +549,14 @@
         }
 
         function updateProgress() {
-            const progress = (usedQuestions.size / questions.length) * 100;
+            const progress = (usedQuestions.size / questions.filter(q => q.assunto === selectedAssunto).length) * 100;
             document.getElementById('progress').style.width = `${progress}%`;
         }
 
         function startTimer() {
             timeLeft = 180;
             updateTimerDisplay();
+            if (timer) clearInterval(timer);
             timer = setInterval(() => {
                 timeLeft--;
                 updateTimerDisplay();
