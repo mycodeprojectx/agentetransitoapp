@@ -305,6 +305,19 @@
             margin: 10px 0;
             color: #2a5298;
         }
+
+        .dropdown {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            font-size: 1.1em;
+            color: #333;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -333,6 +346,14 @@
       </div>
 
     <div class="container">
+        <!-- Campos dropdown para Cargo e Assunto -->
+        <select id="cargoDropdown" class="dropdown">
+            <option value="">Selecione seu cargo</option>
+        </select>
+        <select id="assuntoDropdown" class="dropdown">
+            <option value="">Selecione o assunto</option>
+        </select>
+
         <!-- Resto do conteúdo permanece igual -->
         <div class="score-container">
             <div class="score">Pontuação: <span id="score">0</span> de <span id="total">0</span></div>
@@ -392,11 +413,34 @@
             try {
                 const response = await fetch('/api/questions');
                 questions = await response.json();
+                populateDropdowns();
                 displayQuestion(getRandomQuestion());
                 updateProgress();
             } catch (error) {
                 console.error('Erro ao carregar questões:', error);
             }
+        }
+
+        function populateDropdowns() {
+            const cargoDropdown = document.getElementById('cargoDropdown');
+            const assuntoDropdown = document.getElementById('assuntoDropdown');
+            
+            const cargos = [...new Set(questions.map(q => q.cargo))];
+            const assuntos = [...new Set(questions.map(q => q.assunto))];
+            
+            cargos.forEach(cargo => {
+                const option = document.createElement('option');
+                option.value = cargo;
+                option.textContent = cargo;
+                cargoDropdown.appendChild(option);
+            });
+
+            assuntos.forEach(assunto => {
+                const option = document.createElement('option');
+                option.value = assunto;
+                option.textContent = assunto;
+                assuntoDropdown.appendChild(option);
+            });
         }
 
         function getRandomQuestion() {
