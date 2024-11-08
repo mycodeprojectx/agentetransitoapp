@@ -68,47 +68,47 @@
         }
 
         .alternative {
-        padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: white;
-    font-size: 1.1em;
-}
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: white;
+            font-size: 1.1em;
+        }
 
-.alternative:hover {
-    background: #f0f0f0;
-    border-color: #2a5298;
-}
+        .alternative:hover {
+            background: #f0f0f0;
+            border-color: #2a5298;
+        }
 
-.selected {
-    background: #2a5298;
-    color: white;
-    border-color: #1e3c72;
-}
+        .selected {
+            background: #2a5298;
+            color: white;
+            border-color: #1e3c72;
+        }
 
-.correct {
-    background: #4CAF50;
-    color: white;
-    border-color: #45a049;
-}
+        .correct {
+            background: #4CAF50;
+            color: white;
+            border-color: #45a049;
+        }
 
-.correct:hover {
-    background: #45a049;
-    border-color: #45a049;
-}
+        .correct:hover {
+            background: #45a049;
+            border-color: #45a049;
+        }
 
-.incorrect {
-    background: #f44336;
-    color: white;
-    border-color: #da190b;
-}
+        .incorrect {
+            background: #f44336;
+            color: white;
+            border-color: #da190b;
+        }
 
-.incorrect:hover {
-    background: #da190b;
-    border-color: #da190b;
-}
+        .incorrect:hover {
+            background: #da190b;
+            border-color: #da190b;
+        }
 
         .explanation {
             margin-top: 20px;
@@ -431,7 +431,6 @@
             const assuntoDropdown = document.getElementById('assuntoDropdown');
             
             const cargos = [...new Set(questions.map(q => q.cargo))];
-            const assuntos = [...new Set(questions.map(q => q.assunto))];
             
             cargos.forEach(cargo => {
                 const option = document.createElement('option');
@@ -440,11 +439,17 @@
                 cargoDropdown.appendChild(option);
             });
 
-            assuntos.forEach(assunto => {
-                const option = document.createElement('option');
-                option.value = assunto;
-                option.textContent = assunto;
-                assuntoDropdown.appendChild(option);
+            cargoDropdown.addEventListener('change', () => {
+                assuntoDropdown.innerHTML = '<option value="">Selecione o assunto</option>';
+                const selectedCargo = cargoDropdown.value;
+                const filteredAssuntos = [...new Set(questions.filter(q => q.cargo === selectedCargo).map(q => q.assunto))];
+                
+                filteredAssuntos.forEach(assunto => {
+                    const option = document.createElement('option');
+                    option.value = assunto;
+                    option.textContent = assunto;
+                    assuntoDropdown.appendChild(option);
+                });
             });
         }
 
@@ -606,11 +611,11 @@
             document.getElementById('question-container').style.display = 'block';
             document.getElementById('next-btn').style.display = 'block';
             document.getElementById('final-score').classList.remove('show');
-            loadQuestions();
+            displayQuestion(getRandomQuestion());
+            updateProgress();
         }
 
-        document.getElementById('next-btn').addEventListener('click', nextQuestion);
-        document.addEventListener('DOMContentLoaded', loadQuestions);
+        window.onload = loadQuestions;
     </script>
 </body>
 </html>
