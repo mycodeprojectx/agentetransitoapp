@@ -398,6 +398,7 @@
         let correctAnswers = 0;
         let totalAnswered = 0;
         let questions = [];
+        let selectedAssunto = "";
 
         function openModal() {
             document.getElementById('infoModal').style.display = 'flex';
@@ -449,9 +450,9 @@
 
         function startQuiz() {
             const cargo = document.getElementById('cargoDropdown').value;
-            const assunto = document.getElementById('assuntoDropdown').value;
+            selectedAssunto = document.getElementById('assuntoDropdown').value;
 
-            if (cargo && assunto) {
+            if (cargo && selectedAssunto) {
                 document.getElementById('selectionModal').style.display = 'none';
                 document.getElementById('quizContainer').style.display = 'block';
                 displayQuestion(getRandomQuestion());
@@ -462,7 +463,7 @@
         }
 
         function getRandomQuestion() {
-            const availableQuestions = questions.filter(q => !usedQuestions.has(q.id));
+            const availableQuestions = questions.filter(q => !usedQuestions.has(q.id) && q.assunto === selectedAssunto);
             if (availableQuestions.length === 0) return null;
             
             const randomIndex = Math.floor(Math.random() * availableQuestions.length);
