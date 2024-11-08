@@ -340,7 +340,7 @@
 
         <div class="timer">
             <div class="timer-circle"></div>
-            <div class="timer-text" id="timer">30</div>
+            <div class="timer-text" id="timer">180</div>
         </div>
 
         <div class="progress-bar">
@@ -364,17 +364,15 @@
     </div>
 
     <script>
-        // Código original permanece igual
         let currentQuestion = null;
         let selectedAlternative = null;
         let timer = null;
-        let timeLeft = 30;
+        let timeLeft = 180;
         let usedQuestions = new Set();
         let correctAnswers = 0;
         let totalAnswered = 0;
         let questions = [];
 
-        // Novas funções para o modal
         function openModal() {
             document.getElementById('infoModal').style.display = 'flex';
         }
@@ -383,7 +381,6 @@
             document.getElementById('infoModal').style.display = 'none';
         }
 
-        // Fechar modal quando clicar fora dele
         window.onclick = function(event) {
             const modal = document.getElementById('infoModal');
             if (event.target == modal) {
@@ -391,7 +388,6 @@
             }
         }
 
-        // Resto do código JavaScript permanece igual
         async function loadQuestions() {
             try {
                 const response = await fetch('/api/questions');
@@ -490,7 +486,7 @@
         }
 
         function startTimer() {
-            timeLeft = 30;
+            timeLeft = 180;
             updateTimerDisplay();
             timer = setInterval(() => {
                 timeLeft--;
@@ -510,7 +506,7 @@
 
         function resetTimer() {
             stopTimer();
-            timeLeft = 30;
+            timeLeft = 180;
             updateTimerDisplay();
         }
 
