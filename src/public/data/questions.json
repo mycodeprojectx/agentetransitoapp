@@ -367,6 +367,90 @@
             ],
             "correct": 1,
             "explanation": "A única alternativa com todas as palavras corretamente acentuadas é 'Saúde, baú, Piauí, juízo'. As demais contêm erros como: 'idéia' (forma correta: ideia), 'juíz' (juiz), 'raíz' (raiz), 'gratuíto' (gratuito), 'heroí' (herói), 'saúdavel' (saudável)."
-            }
+            },
+            {
+                "id": 24,
+                "article": "ARTIGO 24",
+                "cargo": "Agente de Trânsito",
+                "assunto": "Português",
+                "question": "Identifique a alternativa que apresenta a concordância verbal correta:",
+                "alternatives": [
+                "Fazem cinco anos que ele trabalha aqui",
+                "Haviam muitas pessoas na reunião",
+                "Precisam-se de funcionários experientes",
+                "Vendem-se casas e alugam-se apartamentos",
+                "Tratam-se de assuntos importantes"
+                ],
+                "correct": 3,
+                "explanation": "A alternativa correta é 'Vendem-se casas e alugam-se apartamentos', pois o verbo concorda com o sujeito. Neste caso, 'casas' e 'apartamentos' são sujeitos, e os verbos estão na voz passiva sintética."
+                },
+                
+                {
+                "id": 25,
+                "article": "ARTIGO 25",
+                "cargo": "Agente de Trânsito",
+                "assunto": "Português",
+                "question": "Qual alternativa apresenta o uso correto da crase?",
+                "alternatives": [
+                "Refiro-me à pessoas que chegaram cedo",
+                "Voltamos à casa dos nossos pais",
+                "Ela foi à Roma antiga",
+                "Dirigi-me à qualquer funcionário",
+                "Visitei à França no ano passado"
+                ],
+                "correct": 1,
+                "explanation": "A alternativa correta é 'Voltamos à casa dos nossos pais', pois neste caso há a fusão da preposição 'a' com o artigo definido 'a'. O uso da crase está correto quando se trata da nossa própria casa (sentido de lar)."
+                },
+                
+                {
+                "id": 26,
+                "article": "ARTIGO 26",
+                "cargo": "Agente de Trânsito",
+                "assunto": "Português",
+                "question": "Assinale a alternativa que contém erro de regência verbal:",
+                "alternatives": [
+                "O filho obedeceu ao pai",
+                "Ele assistiu o filme em casa",
+                "João namora com Maria",
+                "Prefiro estudar do que trabalhar",
+                "Ela visa ao cargo de diretora"
+                ],
+                "correct": 1,
+                "explanation": "A alternativa 'Ele assistiu o filme em casa' contém erro de regência. O correto seria 'Ele assistiu ao filme em casa', pois o verbo assistir no sentido de ver exige a preposição 'a'."
+                },
+                
+                {
+                "id": 27,
+                "article": "ARTIGO 27",
+                "cargo": "Agente de Trânsito",
+                "assunto": "Português",
+                "question": "Qual alternativa apresenta todas as palavras grafadas corretamente?",
+                "alternatives": [
+                "Exceção, privilégio, beneficente, consequência",
+                "Excessão, previlégio, beneficiente, consequência",
+                "Exceção, privilégio, beneficiente, consequencia",
+                "Excessão, privilégio, beneficente, consequência",
+                "Exceção, previlégio, beneficente, consequencia"
+                ],
+                "correct": 0,
+                "explanation": "A alternativa correta é 'Exceção, privilégio, beneficente, consequência'. Todas as palavras estão grafadas de acordo com a norma culta da língua portuguesa."
+                },
+                
+                {
+                "id": 28,
+                "article": "ARTIGO 28",
+                "cargo": "Agente de Trânsito",
+                "assunto": "Português",
+                "question": "Identifique a frase que apresenta pontuação correta:",
+                "alternatives": [
+                "O candidato chegou, fez a prova e saiu correndo",
+                "O candidato, chegou fez a prova, e saiu correndo",
+                "O candidato chegou fez a prova, e, saiu correndo",
+                "O candidato chegou, fez a prova e, saiu correndo",
+                "O candidato, chegou, fez a prova, e saiu correndo"
+                ],
+                "correct": 0,
+                "explanation": "A alternativa 'O candidato chegou, fez a prova e saiu correndo' está correta. A vírgula é usada para separar orações coordenadas assindéticas, e não se usa vírgula antes do 'e' quando ele liga a última oração."
+                }
     ]
 }
