@@ -335,6 +335,22 @@
     ],
     "correct": 2,
     "explanation": "Não pode circular com defeitos, independente da distância até o DETRAN. Memorize: 'Verificação total ANTES de circular'"
-    }
+    },
+    {
+        "id": 22,
+        "article": "ARTIGO 23",
+        "cargo": "Agente de Segurança Patrimonial",
+        "assunto": "Português",
+        "question": "Assinale a alternativa em que todas as palavras estão corretamente acentuadas:",
+        "alternatives": [
+        "Idéia, juíz, raíz, páis",
+        "Saúde, baú, Piauí, juízo",
+        "Gratuíto, feiúra, bocaiúva, saída",
+        "Raínha, heróico, paranóia, juíz",
+        "Jibóia, heroí, gratuíto, saúdavel"
+        ],
+        "correct": 1,
+        "explanation": "A única alternativa com todas as palavras corretamente acentuadas é 'Saúde, baú, Piauí, juízo'. As demais contêm erros como: 'idéia' (forma correta: ideia), 'juíz' (juiz), 'raíz' (raiz), 'gratuíto' (gratuito), 'heroí' (herói), 'saúdavel' (saudável)."
+        }
     ]
 }
