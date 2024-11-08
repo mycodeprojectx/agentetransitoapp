@@ -345,15 +345,20 @@
         </div>
       </div>
 
-    <div class="container">
-        <!-- Campos dropdown para Cargo e Assunto -->
-        <select id="cargoDropdown" class="dropdown">
-            <option value="">Selecione seu cargo</option>
-        </select>
-        <select id="assuntoDropdown" class="dropdown">
-            <option value="">Selecione o assunto</option>
-        </select>
+    <div class="modal" id="selectionModal">
+        <div class="modal-content">
+            <h2>Selecione seu Cargo e Assunto</h2>
+            <select id="cargoDropdown" class="dropdown">
+                <option value="">Selecione seu cargo</option>
+            </select>
+            <select id="assuntoDropdown" class="dropdown">
+                <option value="">Selecione o assunto</option>
+            </select>
+            <button class="btn" onclick="startQuiz()">Iniciar Quiz</button>
+        </div>
+    </div>
 
+    <div class="container" id="quizContainer" style="display: none;">
         <!-- Resto do conteúdo permanece igual -->
         <div class="score-container">
             <div class="score">Pontuação: <span id="score">0</span> de <span id="total">0</span></div>
@@ -414,8 +419,7 @@
                 const response = await fetch('/api/questions');
                 questions = await response.json();
                 populateDropdowns();
-                displayQuestion(getRandomQuestion());
-                updateProgress();
+                document.getElementById('selectionModal').style.display = 'flex';
             } catch (error) {
                 console.error('Erro ao carregar questões:', error);
             }
@@ -441,6 +445,20 @@
                 option.textContent = assunto;
                 assuntoDropdown.appendChild(option);
             });
+        }
+
+        function startQuiz() {
+            const cargo = document.getElementById('cargoDropdown').value;
+            const assunto = document.getElementById('assuntoDropdown').value;
+
+            if (cargo && assunto) {
+                document.getElementById('selectionModal').style.display = 'none';
+                document.getElementById('quizContainer').style.display = 'block';
+                displayQuestion(getRandomQuestion());
+                updateProgress();
+            } else {
+                alert('Por favor, selecione seu cargo e o assunto para começar o quiz.');
+            }
         }
 
         function getRandomQuestion() {
