@@ -39,155 +39,8 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .score-container {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .score {
-            font-size: 1.2em;
-            color: #2a5298;
-            font-weight: bold;
-        }
-
-        .question {
-            font-size: 1.3em;
-            margin-bottom: 20px;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        .alternatives {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .alternative {
-        padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: white;
-    font-size: 1.1em;
-}
-
-.alternative:hover {
-    background: #f0f0f0;
-    border-color: #2a5298;
-}
-
-.selected {
-    background: #2a5298;
-    color: white;
-    border-color: #1e3c72;
-}
-
-.correct {
-    background: #4CAF50;
-    color: white;
-    border-color: #45a049;
-}
-
-.correct:hover {
-    background: #45a049;
-    border-color: #45a049;
-}
-
-.incorrect {
-    background: #f44336;
-    color: white;
-    border-color: #da190b;
-}
-
-.incorrect:hover {
-    background: #da190b;
-    border-color: #da190b;
-}
-
-        .explanation {
-            margin-top: 20px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #2a5298;
-            display: none;
-        }
-
-        .explanation.show {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin-top: 20px;
-            border: none;
-            border-radius: 8px;
-            background: #2a5298;
-            color: white;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #1e3c72;
-        }
-
-        .btn:disabled {
-            background: #cccccc;
-            cursor: not-allowed;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 10px;
-            background: #ddd;
-            border-radius: 5px;
-            margin-top: 20px;
-            overflow: hidden;
-        }
-
-        .progress {
-            height: 100%;
-            background: #4CAF50;
-            width: 0%;
-            transition: width 0.3s ease;
-        }
-
-        /* Novo estilo para o botão flutuante */
-        .floating-btn {
-            position: fixed;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #2a5298;
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            z-index: 999;
-            transition: all 0.3s ease;
-        }
-
-        .floating-btn:hover {
-            background: #1e3c72;
-            transform: translateY(-50%) scale(1.05);
-        }
-
-        /* Estilo para o modal */
         .modal {
-            display: none;
+            display: flex;
             position: fixed;
             top: 0;
             left: 0;
@@ -218,122 +71,54 @@
             color: #666;
         }
 
-        @keyframes modalFadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .question {
-                font-size: 1.2em;
-            }
-
-            .alternative {
-                padding: 12px;
-                font-size: 1em;
-            }
-
-            .floating-btn {
-                left: 10px;
-                padding: 10px 15px;
-            }
-        }
-
-        .timer {
-            position: relative;
-            width: 60px;
-            height: 60px;
-            margin: 20px auto;
-        }
-
-        .timer-circle {
-            position: absolute;
+        .dropdown {
             width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 4px solid #ddd;
-            border-top-color: #2a5298;
-            animation: rotate 30s linear infinite;
-        }
-
-        .timer-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #2a5298;
-        }
-
-        @keyframes rotate {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .final-score {
-            display: none;
-            text-align: center;
-            padding: 20px;
-            background: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
         }
 
-        .final-score.show {
+        .btn {
             display: block;
-            animation: fadeIn 0.5s ease;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            background: #2a5298;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
 
-        .achievement {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #2a5298;
+        .btn:hover {
+            background: #1e3c72;
         }
     </style>
 </head>
 <body>
     <h1>Seja concursado na maravilhosa cidade de Canaã dos Carajás!</h1>
-    
-    <!-- Novo botão flutuante -->
-    <button class="floating-btn" onclick="openModal()">Leia, é importante</button>
 
-    <!-- Novo modal -->
-    <div class="modal" id="infoModal">
+    <!-- Modal de seleção de cargo e assunto -->
+    <div class="modal" id="selectionModal">
         <div class="modal-content">
-          <span class="close-modal" onclick="closeModal()">&times;</span>
-          
-          <p>Todos os dias serão adicionadas 15 questões, o intuito é fechar o edital de Agente de Trânsito, Transporte e Rodoviário(conhecimentos específicos)</p>
-      
-          <p>
-            <a href="https://instagram.com/profjoelguitar" target="_blank">
-              @profjoelguitar
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-              </svg>
-            </a>
-          </p>
-      
+            <span class="close-modal" onclick="closeSelectionModal()">&times;</span>
+            <h2>Escolha seu Cargo e Assunto</h2>
+            <select id="cargo-dropdown" class="dropdown">
+                <option value="">Selecione seu cargo</option>
+            </select>
+            <select id="assunto-dropdown" class="dropdown">
+                <option value="">Selecione o assunto</option>
+            </select>
+            <button class="btn" onclick="confirmSelection()">Confirmar</button>
         </div>
-      </div>
+    </div>
 
     <div class="container">
-        <!-- Resto do conteúdo permanece igual -->
         <div class="score-container">
             <div class="score">Pontuação: <span id="score">0</span> de <span id="total">0</span></div>
         </div>
@@ -373,30 +158,63 @@
         let totalAnswered = 0;
         let questions = [];
 
-        function openModal() {
-            document.getElementById('infoModal').style.display = 'flex';
+        document.addEventListener('DOMContentLoaded', () => {
+            openSelectionModal();
+            loadQuestions();
+        });
+
+        function openSelectionModal() {
+            document.getElementById('selectionModal').style.display = 'flex';
         }
 
-        function closeModal() {
-            document.getElementById('infoModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('infoModal');
-            if (event.target == modal) {
-                closeModal();
-            }
+        function closeSelectionModal() {
+            document.getElementById('selectionModal').style.display = 'none';
         }
 
         async function loadQuestions() {
             try {
                 const response = await fetch('/api/questions');
                 questions = await response.json();
-                displayQuestion(getRandomQuestion());
-                updateProgress();
+                populateDropdowns();
             } catch (error) {
                 console.error('Erro ao carregar questões:', error);
             }
+        }
+
+        function populateDropdowns() {
+            const cargoDropdown = document.getElementById('cargo-dropdown');
+            const assuntoDropdown = document.getElementById('assunto-dropdown');
+
+            const cargos = [...new Set(questions.map(q => q.cargo))];
+            const assuntos = [...new Set(questions.map(q => q.assunto))];
+
+            cargos.forEach(cargo => {
+                const option = document.createElement('option');
+                option.value = cargo;
+                option.textContent = cargo;
+                cargoDropdown.appendChild(option);
+            });
+
+            assuntos.forEach(assunto => {
+                const option = document.createElement('option');
+                option.value = assunto;
+                option.textContent = assunto;
+                assuntoDropdown.appendChild(option);
+            });
+        }
+
+        function confirmSelection() {
+            const cargo = document.getElementById('cargo-dropdown').value;
+            const assunto = document.getElementById('assunto-dropdown').value;
+
+            if (!cargo || !assunto) {
+                alert('Por favor, selecione o cargo e o assunto.');
+                return;
+            }
+
+            closeSelectionModal();
+            displayQuestion(getRandomQuestion());
+            updateProgress();
         }
 
         function getRandomQuestion() {
@@ -547,7 +365,6 @@
         }
 
         document.getElementById('next-btn').addEventListener('click', nextQuestion);
-        document.addEventListener('DOMContentLoaded', loadQuestions);
     </script>
 </body>
 </html>
