@@ -386,7 +386,7 @@
             <button class="btn" onclick="restartQuiz()">Recomeçar Quiz</button>
         </div>
 
-        <button class="btn" id="next-btn" disabled>Próxima Questão</button>
+        <button class="btn" id="next-btn" onclick="nextQuestion()" disabled>Próxima Questão</button>
     </div>
 
     <script>
@@ -608,12 +608,11 @@
             usedQuestions.clear();
             correctAnswers = 0;
             totalAnswered = 0;
-            updateScore();
+            document.getElementById('final-score').classList.remove('show');
             document.getElementById('question-container').style.display = 'block';
             document.getElementById('next-btn').style.display = 'block';
-            document.getElementById('final-score').classList.remove('show');
-            displayQuestion(getRandomQuestion());
-            updateProgress();
+            updateScore();
+            nextQuestion();
         }
 
         window.onload = loadQuestions;
