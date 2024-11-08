@@ -354,19 +354,19 @@
         },
         {
             "id": 23,
-            "article": "ARTIGO 23",
+            "article": "ARTIGO 29",
             "cargo": "Agente de Trânsito",
             "assunto": "Português",
-            "question": "Assinale a alternativa em que todas as palavras estão corretamente acentuadas:",
+            "question": "Analise a oração 'Os motoristas conscientes respeitam as leis de trânsito' e identifique seu sujeito:",
             "alternatives": [
-            "Idéia, juíz, raíz, páis",
-            "Saúde, baú, Piauí, juízo",
-            "Gratuíto, feiúra, bocaiúva, saída",
-            "Raínha, heróico, paranóia, juíz",
-            "Jibóia, heroí, gratuíto, saúdavel"
+            "Sujeito composto",
+            "Sujeito simples",
+            "Sujeito oculto",
+            "Sujeito indeterminado",
+            "Oração sem sujeito"
             ],
             "correct": 1,
-            "explanation": "A única alternativa com todas as palavras corretamente acentuadas é 'Saúde, baú, Piauí, juízo'. As demais contêm erros como: 'idéia' (forma correta: ideia), 'juíz' (juiz), 'raíz' (raiz), 'gratuíto' (gratuito), 'heroí' (herói), 'saúdavel' (saudável)."
+            "explanation": "A alternativa correta é 'Sujeito simples'. Na oração, o núcleo do sujeito é 'motoristas', que está acompanhado pelo artigo 'os' e pelo adjunto adnominal 'conscientes', formando assim um sujeito simples."
             },
             {
                 "id": 24,
